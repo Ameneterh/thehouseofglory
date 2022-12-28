@@ -16,7 +16,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("./Images/bground.png");
+  background: url("/Images/bground.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -266,7 +266,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("./Images/bground.png");
+    background-image: url("/Images/bground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
