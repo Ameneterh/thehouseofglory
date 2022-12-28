@@ -94,7 +94,7 @@ nav a {
   justify-content: center;
   color: white;
   font-family: "Poppins";
-  font-size: 100%;
+  font-size: 14px;
   border: 1px solid white;
   border-radius: 10px;
   margin-left: 5px;
@@ -344,7 +344,7 @@ footer {
     justify-content: center;
     color: white;
     font-family: "Poppins";
-    font-size: 100%;
+    font-size: 14px;
     border: 1px solid white;
     border-radius: 10px;
     width: 25%;
