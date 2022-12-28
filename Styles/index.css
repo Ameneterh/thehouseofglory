@@ -4,6 +4,7 @@
 }
 
 /* general */
+
 a {
   text-decoration: none;
 }
@@ -93,7 +94,7 @@ nav a {
   justify-content: center;
   color: white;
   font-family: "Poppins";
-  font-size: 0.5em;
+  font-size: 100%;
   border: 1px solid white;
   border-radius: 10px;
   margin-left: 5px;
@@ -263,7 +264,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url("/images/bground.jpg");
+    background-image: url("./Images/bground.jpg");
     background-repeat: no-repeat;
     background-size: cover;
   }
