@@ -13,8 +13,8 @@
   <link href="https://fonts.cdnfonts.com/css/clash-display" rel="stylesheet" />
   <link href="https://fonts.cdnfonts.com/css/baskerville" rel="stylesheet" />
 
-  <link href="./Styles/index.css" rel="stylesheet" type="text/css">
-  <title>Home - Christ life Church - The House of Glory</title>
+  <link href="./Styles/contact.css" rel="stylesheet" type="text/css">
+  <title>Contact us - Christ life Church - The House of Glory</title>
 </head>
 
 <body>
@@ -28,10 +28,10 @@
         </div>
       </div>
       <nav>
-        <a href="index.html" id="active">Home</a>
+        <a href="index.html">Home</a>
         <a href="about.html">About us</a>
         <a href="downloads.html">Media +</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" id="active">Contact</a>
         <!-- <div id="dropdown">
           <a href="#">Facebook</a>
           <a href="#">Twitter</a>
@@ -42,10 +42,34 @@
   </header>
 
   <main>
-    <p>New Paragraph</p>
+    <div id="contact-us">
+      <div id="get-in-touch">
+        <h1>Get in touch <span id="breakhere">with us today</span></h1>
+      </div>
+      <div id="form-section">
+        <p>Want to know more? Feel free to:<br />
+          Send us an email <br />
+          Give us a call/SMS - <br />
+          Send us a WhatsApp chat -
+        </p>
+        <p>Alternatively, you can drop by the church to meet us one-on-one: <br />
+          <b>SATURDAYS</b> - 9.00 AM - 12.00 PM <br />
+          <b>SUNDAYS</b> - 11.00 AM - 2.00 PM
+        </p>
+
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Name">
+          <input type="email" id="email" placeholder="Email">
+          <input type="text" id="contact-number" placeholder="Contact Number">
+          <input type="text" id="office" placeholder="Office">
+          <textarea name="message" form="contact-form" id="message">Your Message ...</textarea>
+          <input type="submit" id="submit" value="SUBMIT">
+        </form>
+      </div>
+    </div>
   </main>
 
-  <footer>
+  <!-- <footer>
     <div id="top-footer">
       <div id="top-left">
         <a href="index.html"><img src="./Images/logo_sotsm_header-1.png"></a>
@@ -87,7 +111,7 @@
     <div id="bottom-footer">
       <p>&copy; <span id="copyrightYear"></span> Christ Life Church, The House of Glory, Ado-Ekiti</p>
     </div>
-  </footer>
+  </footer> -->
 
   <script src="/Scripts/index.js"></script>
 </body>
