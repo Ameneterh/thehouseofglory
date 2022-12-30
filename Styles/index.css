@@ -123,8 +123,7 @@ main {
   justify-content: center;
   position: relative;
   top: -1px;
-  width: 90%;
-  border: 2px solid white;
+  width: 100%;
   background: rgba(255, 255, 255, 0.5);
 }
 
@@ -431,6 +430,7 @@ footer {
 
   main {
     padding: 20px;
+    width: 80%;
   }
 
   footer {
