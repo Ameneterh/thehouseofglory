@@ -16,7 +16,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgba(0, 0, 128, 0.654);
+  background: url("/Images/bground.jpg");
+  /* background: rgba(0, 0, 128, 0.654); */
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -428,10 +429,101 @@ footer {
     font-size: 16px;
   }
 
+  /* start of main */
   main {
     padding: 20px;
     width: 80%;
   }
+
+  #section-one {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    background: purple;
+    padding: 0 30px 30px 30px;
+    box-shadow: 0 0 20px black;
+  }
+
+  #sectOneTop {
+    box-sizing: border-box;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .sectOneLeft,
+  .sectOneMiddle,
+  .sectOneRight {
+    width: 33%;
+    height: 100%;
+  }
+
+  .sectOneLeft p {
+    font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+  .sectOneLeft h3 {
+    font-family: "Poppins";
+    text-align: left;
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 38px;
+    color: white;
+  }
+
+  .sectOneMiddle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sectOneMiddle img {
+    height: 250px;
+    width: 200px;
+  }
+
+  .sectOneRight p {
+    font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+    text-align: right;
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+  .sectOneRight h3 {
+    font-family: "Poppins";
+    text-align: left;
+    font-size: 32px;
+    font-weight: bolder;
+    line-height: 38px;
+    text-align: right;
+    color: white;
+  }
+
+  #sect-1-p1 {
+    text-transform: uppercase;
+    font-size: 42px;
+    padding: 0;
+    margin: 0;
+  }
+
+  #sect-1-p2 {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: gold;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* start of footer */
 
   footer {
     box-sizing: border-box;
@@ -530,9 +622,36 @@ footer {
 
   #social-icons {
     width: 50%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .social {
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: white;
+  }
+
+  .social:hover,
+  .social-img:hover {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 0px 20px white;
+  }
+
+  .social-img {
+    width: 50px;
+    height: 50x;
+    border-radius: 50px;
   }
 
   #bottom-footer {
