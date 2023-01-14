@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* general */
@@ -10,44 +11,41 @@ a {
 }
 
 body {
+  font-family: "Poppins";
+  box-sizing: border-box;
   width: 100%;
   min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background: url("/Images/bground.jpg");
-  /* background: rgba(0, 0, 128, 0.654); */
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 header {
   width: 100%;
-  min-height: 100px;
+  max-height: 80px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   background: navy;
-  overflow: hidden;
+  padding: 20px 0;
   box-sizing: border-box;
   box-shadow: 0 0 20px black;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1;
 }
 
 #head-element {
-  padding: 10px;
-  width: 100%;
+  width: 90%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 #head-left {
-  width: 100%;
+  width: 80%;
   height: fit-content;
   display: flex;
   align-items: center;
@@ -55,21 +53,22 @@ header {
 }
 
 #church-name {
-  margin-left: 18px;
+  margin-left: 20px;
   display: flex;
   flex-direction: column;
 }
 
 #head-left img {
-  width: 75px;
-  height: 90px;
+  width: 50px;
+  height: 75px;
 }
 
 #church-name h1 {
+  display: none;
   font-family: "STIX Two Text";
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
+  font-size: 35px;
   color: white;
 }
 
@@ -77,16 +76,14 @@ header {
   font-family: "Satoshi";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 25px;
   color: white;
   text-shadow: -2px 2px 8px yellow;
 }
 
 nav {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: none;
+  width: 40%;
 }
 
 nav a {
@@ -98,45 +95,175 @@ nav a {
   font-size: 1rem;
   border: 1px solid white;
   border-radius: 10px;
-  margin-left: 5px;
   width: 25%;
   height: 40px;
+  margin-left: 10px;
 }
 
-nav a:hover,
-#active:hover {
-  border: none;
+nav a:hover {
   color: rgba(255, 255, 255, 0.5);
   box-shadow: 2px 2px 20px white;
 }
 
-#active {
-  border: none;
-  box-shadow: 0 0 20px yellow;
-}
-
-/* start of main section */
-
-main {
+#drop-down {
+  width: 80px;
+  height: 40px;
+  border: 2px solid white;
+  background-color: navy;
+  border-radius: 6px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#drop-down hr {
+  width: 100%;
+  border: 1px solid white;
+}
+
+#drop-down-menu {
+  z-index: 2;
+  position: absolute;
+  background-color: navy;
+  box-shadow: 0 2px 10px white;
+  top: 63px;
+  right: 50px;
+  width: 108px;
+  padding: 5px;
+  height: fit-content;
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  position: relative;
+  left: 0;
+  height: 30px;
+  width: 100%;
+  font-size: 1rem;
+  text-align: left;
+  padding: 8px 10px;
+  color: white;
+}
+
+ul li a {
+  color: white;
+}
+
+ul li:hover {
+  border-radius: 4px;
+  color: rgb(190, 190, 194);
+  background-color: rgb(92, 118, 245, 0.5);
+}
+
+/* start of main */
+main {
+  padding: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+#section-one {
+  height: fit-content;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: purple;
+  padding: 0 30px 30px 30px;
+  box-shadow: 0 0 20px black;
+}
+
+#sectOneTop {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sectOneLeft,
+.sectOneMiddle,
+.sectOneRight {
+  width: 100%;
+}
+
+.sectOneLeft p {
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 20px 0 10px 0;
+}
+
+.sectOneLeft h3 {
+  font-family: "Poppins";
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+  color: white;
+}
+
+.sectOneMiddle {
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  top: -1px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.5);
+}
+
+.sectOneMiddle img {
+  height: 150px;
+  width: 120px;
+}
+
+.sectOneRight p {
+  font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 20px 0 10px 0;
+}
+
+.sectOneRight h3 {
+  font-family: "Poppins";
+  text-align: left;
+  font-size: 28px;
+  font-weight: bolder;
+  text-align: center;
+  color: white;
+}
+
+#sect-1-p1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+
+#sect-1-p2 {
+  text-transform: uppercase;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 700;
+  color: gold;
+  padding: 0;
+  margin: 0;
+}
+
+main img {
+  width: 30%;
+  margin: 20px auto;
 }
 
 main p {
+  font-size: 2.3rem;
   text-align: center;
-  margin-top: 30px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
   color: white;
-  text-shadow: 0 0 20px black;
+  padding: 0;
+  margin: 0;
 }
 
 /* start of footer */
@@ -144,42 +271,28 @@ main p {
 footer {
   box-sizing: border-box;
   width: 100%;
-  height: fit-content;
   margin-top: -2px;
-  padding: 10px 10px 50px 10px;
-  background: navy;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  padding: 30px 0 50px 0;
+  background-color: navy;
   border-top: 2px solid white;
 }
 
 #top-footer {
   box-sizing: border-box;
-  width: 100%;
+  width: 90%;
   padding: 10px 0;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  margin: 0 auto 20px auto;
   color: white;
-}
-
-#top-left,
-#top-middle,
-#top-right {
-  box-sizing: border-box;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #top-left {
   display: none;
+}
+
+#top-middle,
+#top-right {
+  box-sizing: border-box;
+  height: 100%;
 }
 
 #top-middle h1,
@@ -188,45 +301,36 @@ footer {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2rem;
+  text-align: center;
   color: white;
 }
 
 #top-middle h2 {
   font-family: "Poppins";
   font-style: normal;
-  font-size: 20px;
+  font-size: 1.5rem;
+  text-align: center;
   color: white;
-  margin-top: 20px;
 }
 
 #top-middle p,
-#service-times p {
+#service-times {
   font-family: "Satoshi";
   font-style: normal;
-  font-size: 20px;
-  color: white;
+  font-size: 1rem;
   text-align: center;
-  margin-bottom: 20px;
+  color: white;
 }
 
 #top-right {
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  margin-top: 20px;
 }
 
 #service-times {
   width: 100%;
-  height: 100%;
   margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #bold {
@@ -234,25 +338,19 @@ footer {
 }
 
 #bold::before {
-  content: "\a";
-  white-space: pre;
+  display: inline-block;
 }
 
 #social-media {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 #social-icons {
   width: 100%;
-  height: 90px;
-  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: border-box;
 }
 
 .social {
@@ -289,58 +387,35 @@ footer {
   justify-content: center;
   color: white;
   font-family: "Poppins";
-  text-align: center;
   border-top: 1px dotted white;
 }
 
-@media (min-width: 600px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  body {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
+@media (min-width: 1100px) {
   header {
     width: 100%;
-    max-height: 120px;
+    min-height: 120px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     background: navy;
-    padding: 20px 0;
+    overflow: hidden;
     box-sizing: border-box;
     box-shadow: 0 0 20px black;
-    position: sticky;
     top: 0;
     left: 0;
     z-index: 1;
   }
 
   #head-element {
-    width: 90%;
+    padding: 10px;
+    width: 80%;
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
 
   #head-left {
-    width: 40%;
+    width: 100%;
     height: fit-content;
     display: flex;
     align-items: center;
@@ -348,17 +423,22 @@ footer {
   }
 
   #church-name {
-    margin-left: 20px;
+    margin-left: 18px;
     display: flex;
     flex-direction: column;
   }
 
+  #namebreak {
+    display: none;
+  }
+
   #head-left img {
     width: 75px;
-    height: 100px;
+    height: 90px;
   }
 
   #church-name h1 {
+    display: block;
     font-family: "STIX Two Text";
     font-style: normal;
     font-weight: 700;
@@ -369,14 +449,14 @@ footer {
   #church-name h2 {
     font-family: "Satoshi";
     font-style: normal;
-    font-weight: 700;
-    font-size: 25px;
+    font-weight: 800;
+    font-size: 30px;
     color: white;
-    text-shadow: -2px 2px 8px yellow;
+    text-shadow: 2px 2px 20px 10px gold;
   }
 
   nav {
-    width: 40%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -391,91 +471,77 @@ footer {
     font-size: 1rem;
     border: 1px solid white;
     border-radius: 10px;
-    width: 25%;
+    margin-left: 5px;
+    width: 20%;
     height: 40px;
-    margin-left: 10px;
   }
 
-  nav a:hover {
+  nav a:hover,
+  #active:hover {
+    border: none;
     color: rgba(255, 255, 255, 0.5);
     box-shadow: 2px 2px 20px white;
   }
 
-  #dropdown {
-    width: 200px;
-    position: absolute;
-    top: 80px;
-    left: 1230px;
-    background: red;
+  #active {
+    border: none;
+    box-shadow: 0 0 20px yellow;
+  }
+
+  #drop-down {
     display: none;
   }
 
-  #contact:hover + #dropdown {
-    display: block;
-  }
+  /* start of main section */
 
-  #dropdown a {
-    width: 100%;
-    margin: 0;
-    height: 30px;
-    border: none;
-    padding: 10px;
-    border-radius: 0;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    color: white;
-    font-family: "Poppins";
-    font-size: 16px;
-  }
-
-  /* start of main */
   main {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -1px;
     width: 80%;
   }
 
   #section-one {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    height: fit-content;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: purple;
-    padding: 0 30px 30px 30px;
+    padding: 30px;
     box-shadow: 0 0 20px black;
   }
 
   #sectOneTop {
-    box-sizing: border-box;
     width: 100%;
     height: 300px;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
   }
 
   .sectOneLeft,
   .sectOneMiddle,
   .sectOneRight {
-    width: 33%;
+    width: 33.3%;
     height: 100%;
   }
 
   .sectOneLeft p {
     font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
     text-align: left;
-    font-size: 24px;
-    line-height: 38px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 20px 0 10px 0;
   }
 
   .sectOneLeft h3 {
     font-family: "Poppins";
     text-align: left;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: bolder;
-    line-height: 38px;
     color: white;
   }
 
@@ -486,65 +552,72 @@ footer {
   }
 
   .sectOneMiddle img {
-    height: 250px;
-    width: 200px;
+    height: 300px;
+    width: 250px;
   }
 
   .sectOneRight p {
     font-family: Tahoma, "Segoe UI", Geneva, Verdana, sans-serif;
     text-align: right;
-    font-size: 24px;
-    line-height: 38px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 42px;
+    margin: 20px 0 10px 0;
   }
 
   .sectOneRight h3 {
     font-family: "Poppins";
-    text-align: left;
-    font-size: 32px;
-    font-weight: bolder;
-    line-height: 38px;
     text-align: right;
+    font-size: 40px;
+    font-weight: bolder;
     color: white;
   }
 
   #sect-1-p1 {
     text-transform: uppercase;
-    font-size: 42px;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-weight: 700;
     padding: 0;
     margin: 0;
   }
 
   #sect-1-p2 {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: 700;
     color: gold;
     padding: 0;
     margin: 0;
   }
 
+  main img {
+    width: 250px;
+    height: 300px;
+    margin: 20px auto;
+  }
+
   /* start of footer */
 
   footer {
-    box-sizing: border-box;
     width: 100%;
+    height: fit-content;
     margin-top: -2px;
-    padding: 30px 0 50px 0;
+    padding: 10px 10px 50px 10px;
+    background: navy;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: space-between;
     border-top: 2px solid white;
   }
 
   #top-footer {
-    box-sizing: border-box;
-    width: 90%;
+    width: 80%;
     padding: 10px 0;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     color: white;
   }
@@ -552,12 +625,14 @@ footer {
   #top-left,
   #top-middle,
   #top-right {
-    box-sizing: border-box;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+  }
+
+  #top-left {
+    display: block;
+    margin-right: 10px;
   }
 
   #top-middle h1,
@@ -568,26 +643,35 @@ footer {
     font-weight: 700;
     font-size: 30px;
     color: white;
+    text-align: left;
   }
 
   #top-middle h2 {
     font-family: "Poppins";
     font-style: normal;
-    font-size: 20px;
+    font-size: 24px;
     color: white;
+    text-align: left;
   }
 
   #top-middle p,
-  #service-times {
+  #service-times p {
     font-family: "Satoshi";
     font-style: normal;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
+    text-align: left;
+    margin-bottom: 20px;
   }
 
+  #top-middle {
+    width: 50%;
+    margin-right: 10px;
+  }
   #top-right {
     width: 40%;
     height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -595,12 +679,10 @@ footer {
   }
 
   #service-times {
-    width: 100%;
     height: 100%;
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: space-between;
   }
 
@@ -609,7 +691,8 @@ footer {
   }
 
   #bold::before {
-    display: inline-block;
+    content: "\a";
+    white-space: pre;
   }
 
   #social-media {
@@ -617,28 +700,33 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   #social-icons {
-    width: 50%;
-    height: 50px;
+    width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    box-sizing: border-box;
+    justify-content: flex-start;
   }
 
   .social {
     width: 50px;
     height: 50px;
-    margin: 0 5px;
+    margin: 0 15px 0 0;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     background: white;
+  }
+
+  .social-img {
+    width: 50px;
+    height: 50x;
+    border-radius: 50px;
   }
 
   .social:hover,
@@ -648,21 +736,16 @@ footer {
     box-shadow: 0px 0px 20px white;
   }
 
-  .social-img {
-    width: 50px;
-    height: 50x;
-    border-radius: 50px;
-  }
-
   #bottom-footer {
     box-sizing: border-box;
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     font-family: "Poppins";
+    text-align: center;
     border-top: 1px dotted white;
   }
 }

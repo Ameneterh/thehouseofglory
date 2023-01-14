@@ -24,19 +24,39 @@
         <a href="index.html"><img src="./Images/logo_sotsm_header-1.png" alt="SOTSM Logo"></a>
         <div id="church-name">
           <h1>Christ Life Church</h1>
-          <h2>The House of Glory, Ado-Ekiti</h2>
+          <h2>The House of Glory, <br id="namebreak">Ado-Ekiti</br></h2>
         </div>
       </div>
       <nav>
         <a href="index.html" id="active">Home</a>
         <a href="about.html">About us</a>
-        <a href="downloads.html">Media +</a>
+        <a href="downloads.html">Media</a>
         <a href="contact.html">Contact</a>
-        <!-- <div id="dropdown">
-          <a href="#">Facebook</a>
-          <a href="#">Twitter</a>
-        </div> -->
       </nav>
+
+      <!-- start of dropdown menu on small screens -->
+      <button type="button" id="drop-down" onclick="getDropMenu()">
+        <hr>
+        <hr>
+        <hr>
+        <hr>
+        <div id="drop-down-menu">
+          <ul>
+            <a href="index.html">
+              <li>Home</li>
+            </a>
+            <a href="about.html">
+              <li>About us</li>
+            </a>
+            <a href="downloads.html">
+              <li>Media</li>
+            </a>
+            <a href="contact.html">
+              <li>Contact us</li>
+            </a>
+          </ul>
+        </div>
+      </button>
 
     </div>
   </header>
