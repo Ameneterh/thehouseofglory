@@ -665,11 +665,11 @@ footer {
   }
 
   #top-middle {
-    width: 50%;
+    width: 45%;
     margin-right: 10px;
   }
   #top-right {
-    width: 40%;
+    width: 45%;
     height: 100%;
     margin: 0;
     display: flex;
