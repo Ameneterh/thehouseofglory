@@ -510,6 +510,8 @@ footer {
   #section-one {
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-direction: column;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     background: purple;
