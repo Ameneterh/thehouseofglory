@@ -52,7 +52,7 @@ header {
 }
 
 #church-name {
-  margin-left: 20px;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
 }
@@ -74,8 +74,8 @@ header {
 #church-name h2 {
   font-family: "Satoshi";
   font-style: normal;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 500;
+  font-size: 20px;
   color: white;
   text-shadow: -2px 2px 8px yellow;
 }
@@ -105,8 +105,8 @@ nav a:hover {
 }
 
 #drop-down {
-  width: 80px;
-  height: 40px;
+  width: 60px;
+  height: 30px;
   border: 2px solid white;
   background-color: navy;
   border-radius: 6px;
