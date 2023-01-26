@@ -187,7 +187,7 @@ main {
   font-family: "Poppins";
   font-style: normal;
   line-height: 24px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 18px;
 }
 
@@ -512,8 +512,22 @@ footer {
     font-family: "Poppins";
     font-style: normal;
     line-height: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     font-size: 18px;
+  }
+
+  /* #top-form {
+    width: 80%;
+  } */
+
+  .contact-detail {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .bold {
+    font-weight: 800;
   }
 
   #contact-form {

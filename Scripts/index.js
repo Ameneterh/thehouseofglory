@@ -24,3 +24,27 @@ function getDropMenu() {
 //     drop.style.display = "none";
 //   }
 // };
+
+function showVidView() {
+  var vids = document.getElementsByClassName("vidcontainer")[0];
+  var docs = document.getElementsByClassName("doccontainer")[0];
+  var vidBar = document.getElementById("video-bar");
+  var docBar = document.getElementById("doc-bar");
+
+  vids.style.display = "flex";
+  docs.style.display = "none";
+  vidBar.style.backgroundColor = "white";
+  docBar.style.backgroundColor = "rgb(180, 177, 177)";
+}
+
+function showDocView() {
+  var vids = document.getElementsByClassName("vidcontainer")[0];
+  var docs = document.getElementsByClassName("doccontainer")[0];
+  var vidBar = document.getElementById("video-bar");
+  var docBar = document.getElementById("doc-bar");
+
+  vids.style.display = "none";
+  docs.style.display = "flex";
+  vidBar.style.backgroundColor = "rgb(180, 177, 177)";
+  docBar.style.backgroundColor = "white";
+}
