@@ -615,13 +615,14 @@ footer {
   }
 
   #top-footer {
-    width: 80%;
+    width: 90%;
     padding: 10px 0;
     margin-bottom: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     color: white;
+    gap: 15px;
   }
 
   #top-left,
@@ -634,7 +635,6 @@ footer {
 
   #top-left {
     display: block;
-    margin-right: 10px;
   }
 
   #top-middle h1,
@@ -668,7 +668,6 @@ footer {
 
   #top-middle {
     width: 45%;
-    margin-right: 10px;
   }
   #top-right {
     width: 45%;
@@ -685,6 +684,12 @@ footer {
     margin-bottom: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .spaced {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
   }
 
